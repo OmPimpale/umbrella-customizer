@@ -1,0 +1,162 @@
+body {
+    margin: 0px;
+    background-color: #d4e7f3;
+}
+
+.parent-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    place-content: center;
+    justify-items: center;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    .parent-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        height: 100vh;
+        padding: 2rem;
+    }
+}
+
+.umbrella-image-div,
+.umbrella-customizer-div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.constomizer-heading {
+    margin: 0px;
+}
+
+.umbrella-image {
+    width: 100%;
+    max-width: 24rem;
+}
+
+.umbrella-color {
+    margin: 1.4rem 0px;
+}
+
+.pink-btn,
+.blue-btn,
+.yellow-btn {
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: medium;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.pink-btn {
+    background-color: #ff4081;
+}
+
+.blue-btn {
+    background-color: #0099ff;
+}
+
+.yellow-btn {
+    background-color: #ffeb3b;
+}
+
+.preview-heading {
+    margin: 0px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.preview-instruction {
+    margin: 0px;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.additional-info {
+    margin: 4px 0px;
+    margin-top: 8px;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.customizer-div {
+    width: 100%;
+}
+
+.upload-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+#upload-logo {
+    display: none;
+}
+
+.custom-file-upload {
+    font-size: x-small;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #0099ff;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 12px 28px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.upload-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+    pointer-events: none;
+}
+
+.image-size-text {
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin: 2px 0px;
+}
+
+.button-div{
+    width: 100%;
+}
+
+.buy-now-button {
+    font-size: x-small;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #0099ff;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 12px 28px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 20px;
+    text-decoration: none;
+}
