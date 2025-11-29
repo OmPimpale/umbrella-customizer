@@ -35,17 +35,77 @@ body {
     justify-content: center;
 }
 
-.constomizer-heading {
-    margin: 0px;
+.umbrella-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
 
 .umbrella-image {
     width: 100%;
     max-width: 24rem;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.logo-preview {
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: auto;
+    pointer-events: none;
+    display: none;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 5;
+}
+
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+#loader.hidden {
+    display: none !important;
+}
+
+.loader-icon {
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#logo-size-slider {
+    width: 140px;
+    margin: 16px auto;
+    cursor: pointer;
+    accent-color: var(--slider-color, #0099ff);
+    display: none;
+}
+
+.constomizer-heading {
+    font-weight: 700;
+    margin: 0px;
 }
 
 .umbrella-color {
-    margin: 1.4rem 0px;
+    margin: 20px 0px;
 }
 
 .pink-btn,
@@ -57,90 +117,50 @@ body {
     border-radius: 50%;
     font-size: medium;
     font-weight: 700;
-    letter-spacing: 1px;
     cursor: pointer;
     margin-right: 4px;
-}
-
-.pink-btn {
-    background-color: #ff4081;
 }
 
 .blue-btn {
     background-color: #0099ff;
 }
 
+.pink-btn {
+    background-color: #ff4081;
+}
+
 .yellow-btn {
     background-color: #ffeb3b;
 }
 
-.preview-heading {
-    margin: 0px;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.preview-instruction {
-    margin: 0px;
-    font-size: 0.9rem;
-    font-weight: 300;
-}
-
-.additional-info {
-    margin: 4px 0px;
-    margin-top: 8px;
-    font-size: 0.7rem;
-    font-weight: 300;
-}
-
-.customizer-div {
-    width: 100%;
-}
-
-.upload-wrapper {
-    position: relative;
-    width: 100%;
-}
-
-#upload-logo {
-    display: none;
+.upload-icon {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+    pointer-events: none;
 }
 
 .custom-file-upload {
-    font-size: x-small;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 1px;
     color: white;
     background-color: #0099ff;
     border-radius: 4px;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     padding: 12px 28px;
     cursor: pointer;
     width: 100%;
     text-align: center;
     position: relative;
     box-sizing: border-box;
-}
-
-.upload-icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
-    filter: brightness(0) invert(1);
-    pointer-events: none;
-}
-
-.image-size-text {
-    font-size: 0.7rem;
-    font-weight: 300;
-    margin: 2px 0px;
-}
-
-.button-div{
-    width: 100%;
 }
 
 .buy-now-button {
@@ -159,4 +179,77 @@ body {
     box-sizing: border-box;
     margin-top: 20px;
     text-decoration: none;
+}
+
+.preview-heading,
+.preview-instruction,
+.additional-info {
+    margin: 0;
+}
+
+.preview-heading {
+    font-weight: 700;
+    font-size: large;
+}
+
+.preview-instruction {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.additional-info {
+    margin: 8px 0px 4px 0px;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.image-size-text {
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+#upload-logo {
+    display: none;
+}
+
+.uploaded-file {
+    background-color: #0099ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.file-upload-icon {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+}
+
+.remove-file-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.upload-loader {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 12px;
+    animation: spin 1s linear infinite;
+}
+
+.hidden {
+    display: none !important;
 }
