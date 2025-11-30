@@ -37,7 +37,7 @@ if (colorButtons.length > 0) {
             slider.style.setProperty("--slider-color", newColor);
 
             setTimeout(() => {
-                umbrellaImg.src = `../assets/${colorMap[selectedColor].file}`;
+                umbrellaImg.src = `assets/${colorMap[selectedColor].file}`;
                 document.body.style.backgroundColor = newColor + "20";
 
                 umbrellaImg.style.opacity = 1;
