@@ -41,22 +41,21 @@
             <p class="additional-info">Upload a PNG file with transparent background for best results.</p>
 
             <div class="customizer-div">
-                <div class="upload-wrapper">
-                    <label for="upload-logo" class="custom-file-upload" id="upload-label">
-                        <img src="../assets/upload_icon.svg" alt="upload_icon" class="upload-icon">
-                        <span id="upload-text">UPLOAD LOGO</span>
 
-                        <img src="../assets/loader_icon.svg" class="upload-loader hidden" id="upload-loader" />
+                <div class="upload-wrapper">
+
+                    <label for="upload-logo" class="custom-file-upload" id="upload-label">
+                        <img src="../assets/upload_icon.svg" class="upload-icon">
+                        <span id="upload-text">UPLOAD LOGO</span>
+                        <button id="remove-file" class="remove-file-btn hidden">✕</button>
                     </label>
 
-                    <div id="uploaded-file-box" class="uploaded-file hidden">
-                        <img src="../assets/upload_icon.svg" class="file-upload-icon">
-                        <span id="file-name"></span>
-                        <button id="remove-file" class="remove-file-btn">✕</button>
-                    </div>
+                    <p id="file-warning" class="file-warning hidden">⚠ Only image files under 5MB allowed</p>
 
                     <input type="file" id="upload-logo" accept="image/*">
+
                 </div>
+
                 <p class="image-size-text">max size: 5MB</p>
             </div>
 
