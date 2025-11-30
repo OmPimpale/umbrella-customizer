@@ -2,6 +2,8 @@
 
 The **Umbrella Customizer** is an interactive tool designed for corporate customers to preview their brand logo on an umbrella before placing an order. Users can select from multiple umbrella colors, upload their own logo, resize it, and instantly visualize how the final product will look.
 
+live demo: <a href="your-umbrella.netlify.app">Customize Umbrella</a>
+
 ---
 
 ## 🎯 Project Objective
