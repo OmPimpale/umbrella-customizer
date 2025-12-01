@@ -2,6 +2,8 @@
 
 The **Umbrella Customizer** is an interactive tool designed for corporate customers to preview their brand logo on an umbrella before placing an order. Users can select from multiple umbrella colors, upload their own logo, resize it, and instantly visualize how the final product will look.
 
+#### 🔗 Ddemo of the project: <a href="https://ompimpale.github.io/umbrella-customizer/">live demo</a>
+
 ---
 
 ## 🎯 Project Objective
@@ -76,3 +78,5 @@ umbrella-customizer/
 ```bash
 git clone https://github.com/OmPimpale/umbrella-customizer.git
 ```
+
+Thank you for checking out the project! 😊
